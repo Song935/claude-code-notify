@@ -18,6 +18,20 @@ VS Code에서 Claude Code에게 작업을 맡기고 다른 창을 보고 있어�
 2. `C:\Users\<사용자이름>\.claude\settings.json`에 `settings.example.json`의 `hooks` 부분을 합칩니다. `<사용자이름>`은 본인 것으로 바꿉니다.
 3. Claude Code를 다시 시작합니다.
 
+## Claude Code에게 설치 맡기기
+
+Claude Code에 아래 문장을 붙여 넣으면 에이전트가 설치합니다. `내이름`은 본인 윈도우 사용자 이름으로 바꿉니다.
+
+```
+https://github.com/Song935/claude-code-notify 레포를 보고 윈도우 알림 훅을 설치해줘.
+
+1. 레포의 README.md와 toast.ps1을 먼저 읽고, 무슨 일을 하는 코드인지 나에게 쉬운 말로 설명해줘.
+2. toast.ps1을 C:\Users\내이름\.claude\notify\ 폴더에 복사해줘. 폴더가 없으면 만들어줘.
+3. C:\Users\내이름\.claude\settings.json에 Stop 훅을 추가해줘. 이미 있는 설정은 지우지 말고 합쳐줘. 수정 전에 어떻게 바뀌는지 먼저 보여줘.
+4. 설치가 끝나면 팝업이 뜨는지 확인하는 방법을 알려줘.
+```
+
+설치가 끝나면 Claude Code를 다시 시작해야 훅이 적용됩니다.
 ## 동작 방식
 
 - `Stop` 훅: Claude Code가 훅 정보(JSON)를 표준입력으로 넘기면, 작업 폴더 이름을 읽어 `[폴더이름] 답변이 끝났어요` 팝업을 띄웁니다.
