@@ -1,15 +1,5 @@
 {
   "hooks": {
-    "Notification": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python C:/Users/<사용자이름>/.claude/kakao/kakao_notify.py hook"
-          }
-        ]
-      }
-    ],
     "Stop": [
       {
         "hooks": [
