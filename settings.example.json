@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python C:/Users/<사용자이름>/.claude/kakao/kakao_notify.py hook"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:/Users/<사용자이름>/.claude/notify/toast.ps1"
+          }
+        ]
+      }
+    ]
+  }
+}

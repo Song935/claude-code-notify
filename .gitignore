@@ -1,0 +1,4 @@
+# 카카오 키와 토큰은 절대 올리지 않는다
+config.json
+tokens.json
+__pycache__/
